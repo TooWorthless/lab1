@@ -27,14 +27,14 @@ public class LibraryTest {
     }
 
     @Test
-    void testDeleBookByIsbn() {
+    void testDelBookByIsbn() {
         library.addBook(book);
         assertTrue(library.delBookByIsbn(12345));
         assertNull(library.getBookByTitle("TestTitleInLibrary"));
     }
 
     @Test
-    void testFindBookByTitle() {
+    void testGetBookByTitle() {
         library.addBook(book);
         assertEquals(book, library.getBookByTitle("TestTitleInLibrary"));
         assertNull(library.getBookByTitle("IncorrectBookTitle"));

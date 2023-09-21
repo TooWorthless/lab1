@@ -15,6 +15,8 @@ public class Book {
         int year
     )
     {
+        if(year <= 868) throw new IllegalArgumentException("Year can't be earlier than 868!");
+        
         this.isbn = isbn;
         this.title = title;
         this.author = author;

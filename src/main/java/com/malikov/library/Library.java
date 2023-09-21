@@ -38,6 +38,7 @@ public class Library {
     }
 
     public ArrayList<Book> booksList() {
+        if(this.books.isEmpty()) return null;
         return this.books;
     }
 
